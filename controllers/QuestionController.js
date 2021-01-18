@@ -32,3 +32,17 @@ module.exports.listQuestion = (req, res) => {
     }
   });
 };
+
+module.exports.deleteQuestion = (req, res) => {
+  var question_id = req.body.question_id;
+  connection.query(
+    `DELETE FROM tbl_questions WHERE questions_id=${question_id}`,
+    (err, result, fields) => {
+      if (err) {
+        res.json({ status: false, message: 'Yeniden deneyiniz.' });
+      } else {
+        res.json({ status: true, message: 'Silme başarılı', data: result });
+      }
+    },
+  );
+};
