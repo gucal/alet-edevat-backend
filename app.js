@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+var cors = require('cors');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -15,7 +16,7 @@ const categoryRouter = require('./routes/category');
 const answerRouter = require('./routes/answer');
 
 const app = express();
-
+app.use(cors());
 //db connection
 require('./helper/db');
 
