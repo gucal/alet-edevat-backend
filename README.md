@@ -7,9 +7,6 @@
     Celal Bayar Üniversitesi Yazılım Mühendisliği 3. sınıf SOA - IWP - DB dersleri projesi için oluşturulan aletedevat.com isimli projenin backend reposudur...
     <br />
     ·
-    <a href="https://github.com/Gucal/Alet-Edevat-Backend/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Gucal/Alet-Edevat-Backend/issues">Request Feature</a>
   </p>
 </p>
 
